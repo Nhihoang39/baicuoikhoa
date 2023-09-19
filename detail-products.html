@@ -1,0 +1,570 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zay eCommerce</title>
+<link rel="stylesheet" href="CSS/thu-vien.css">
+<link rel="stylesheet" href="CSS/fontawesome.css">
+<link rel="stylesheet" href="CSS/assets/owl.carousel.css">
+<link rel="stylesheet" href="CSS/assets/owl.theme.default.css">
+<link rel="shortcut icon" href="img/apple-icon.png" type="image/x-icon">
+<link rel="stylesheet" href="CSS/main-style.css">
+</head>
+
+<body>
+<section id="header">
+  <div class="bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"> <i class="fas fa-envelope fa-spin"></i> info@company.com &nbsp;&nbsp; <i class="fas fa-phone-alt fa-spin"></i> 010-020-0340 </div>
+        <div class="col-6 text-right"> <i class="fab fa-facebook-f"></i> &nbsp; <i class="fab fa-instagram"></i> &nbsp; <i class="fab fa-twitter"></i> &nbsp; <i class="fab fa-linkedin"></i> </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="container"> <a href="index.html" class="logo"><img src="img/apple-icon.png" alt=""></a> 
+      <!--het logo-->
+      
+      <div id="menu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="detail-products.html" class="active">Products</a>
+            <div class="dropdown"> <a href="watches.html">Watches</a> <a href="shoes.html">Shoes</a> <a href="accessories.html">Accessories</a> </div>
+          </li>
+          
+          <!--het list dropdown-->
+          
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--het menu-->
+      
+      <div class="navbar-icon"> <a href="#"><i class="fas fa-search p-5"></i></a> <a href="#"><i class="fas fa-shopping-cart"></i></a> <a href="#"><i class="fas fa-user-alt p-5"></i></a> </div>
+    </div>
+  </nav>
+</section>
+<section id="prod">
+  <div class="bg-grey py-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-4" style="padding-top: 0"> <img src="img/product_single_03.jpg" alt="" class="img-100" id="anhto">
+			
+          <div class="sp-con row" style="cursor: pointer">
+			  <div class="container">
+			  <div class="owl-carousel owl-theme" id="prod1">
+			<div class="item">
+				<img src="img/product_single_02.jpg" alt="" class="img-100" onClick="taianhstt(2)">
+				</div>
+            <div class="item">
+				<img src="img/product_single_03.jpg" alt="" class="img-100" onClick="taianhstt(3)" >
+				  </div>
+            <div class="item">
+				  <img src="img/product_single_04.jpg" alt="" class="img-100" onClick="taianhstt(4)" >
+				  </div>
+            <div class="item">
+				  <img src="img/product_single_05.jpg" alt="" class="img-100" onClick="taianhstt(5)">
+				  </div>
+            
+          </div>
+				  </div>
+				 </div>
+        </div>
+        <div class="col-8 bg-white">
+          <div class="pl-20">
+            <h3 >Active Wear</h3>
+            <p>$25.00</p>
+            <div class="row align-item-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i>
+              <p class="pl-10"> Rating 4.8 | 36 Comments</p>
+            </div>
+            <div class="row">
+              <h4>Brand:</h4>
+              <h4 class="text-grey pl-10">Easy Wear</h4>
+            </div>
+            <h4>Description:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+            <div class="row">
+              <h4>Avaliable Color:</h4>
+              <h4 class="text-grey pl-10">White / Black</h4>
+            </div>
+            <h4>Specification:</h4>
+            <p>Lorem ipsum dolor sit
+              Amet, consectetur
+              Adipiscing elit,set
+              Duis aute irure
+              Ut enim ad minim
+              Dolore magna aliqua
+              Excepteur sint</p>
+            <div class="row py-20">
+              <p>Size:</p>
+              <button type="button" class="btn-product">S</button>
+              <button type="button" class="btn-product">M</button>
+              <button type="button" class="btn-product">L</button>
+              <button type="button" class="btn-product">XL</button>
+              <ul class="list-inline pb-3">
+                <li class="list-inline-item text-right"> Quantity:
+                  <input type="hidden" name="product-quanity" id="product-quanity" value="1">
+                </li>
+                <li class="list-inline-item"><span class="btn-product" id="btn-minus">-</span></li>
+                <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
+                <li class="list-inline-item"><span class="btn-product" id="btn-plus">+</span></li>
+              </ul>
+            </div>
+            <div class="row py-20">
+              <div class="col-6">
+                <button type="button" class="btn-product" style="width:100%">Buy</button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn-product" style="width:100%">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="relatedprod" class="bg-white py-50 mb-30">
+<div class="container">
+<h3 class="text-dark">Related Products</h3>
+<div class="owl-carousel owl-theme" id="related">
+  <div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_08.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Red Clothing</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$20.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_09.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>White Shirt</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$25.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_10.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Outpidatat non</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$125.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_11.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Black Fashion</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$60.00</p>
+    </div>
+  </div>
+	
+	
+  <div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_08.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Red Clothing</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$20.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_09.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>White Shirt</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$25.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_10.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Outpidatat non</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$125.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_11.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Black Fashion</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$60.00</p>
+    </div>
+  </div>
+	
+	
+	
+  <div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_08.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Red Clothing</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$20.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_09.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>White Shirt</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$25.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_10.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Outpidatat non</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$125.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_11.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Black Fashion</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$60.00</p>
+    </div>
+  </div>
+	
+	
+	
+  <div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_08.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Red Clothing</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$20.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_09.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>White Shirt</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$25.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_10.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Outpidatat non</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$125.00</p>
+    </div>
+  </div>
+	<div class="item">
+	  
+	  
+    <div class="card3">
+		
+		<div class="iconcard">
+			<a class="bg-primary text-light" href="#"><i class="fas fa-heart"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-eye"></i></a>
+			<a class="bg-primary text-light" href="#"><i class="fas fa-cart-plus"></i></a>
+            
+	  
+	  
+	  </div>
+		
+		<img src="img/shop_11.jpg" alt="" class="img-100">
+		
+		
+      <div class="pl-30">
+		<p>Black Fashion</p>
+      <p>M/L/X/XL</p></div>
+      <div class="row justify-center"> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star text-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+      <p class="text-center">$60.00</p>
+    </div>
+  </div>
+	
+	
+</div>
+	
+	</div>
+	<div class="mb-30"></div>
+</section>
+<footer class="bg-dark text-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3 class="text-primary border-bottom">Zay Shop</h3>
+        <p><i class="fas fa-map-marked-alt"></i>123 Consectetur at ligula 10660</p>
+        <p><i class="fas fa-phone"></i>010-020-0340</p>
+        <p><i class="fas fa-envelope"></i>info@company.com</p>
+      </div>
+      <div class="col-4">
+        <h3 class="border-bottom">Products</h3>
+        <p> <a href="luxury.html">Luxury</a> <a href="sportwear.html">Sport Wear</a> <a href="men-shoes.html">Men's Shoes</a> <a href="women-shoes.html">Women's Shoes</a> <a href="populardress.html">Popular Dress</a> <a href="gymacc.html">Gym Accessories</a> <a href="sportshoes.html">Sport Shoes</a> </p>
+      </div>
+      <div class="col-4">
+        <h3 class="border-bottom">Further Info</h3>
+        <p> <a href="home.html">Home</a> <a href="aboutus.html">About Us</a> <a href="shop-locations.html">Shop Locations</a> <a href="FAQs.html">FAQs</a> <a href="contact.html">Contact</a> </p>
+      </div>
+    </div>
+    <div class="border-bottom"></div>
+    <div class="row align-item-center">
+      <div class="col-6">
+        <p class="icon"> <a href="#" class="circle-icon"><i class="fab fa-facebook-f fa-lg"></i></a> <a href="#" class="circle-icon"><i class="fab fa-instagram fa-lg"></i></a> <a href="#" class="circle-icon"><i class="fab fa-twitter fa-lg"></i></a> <a href="#" class="circle-icon"><i class="fab fa-linkedin fa-lg"></i></a> </p>
+      </div>
+      <div class="col-6 text-right">
+        <form class="form-inline">
+          <input type="email" class="input-form" placeholder="email address">
+          <input type="submit" class="btn-primary" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="py-20 bg-black">
+    <p class="text-center">Copyright © 2021 Company Name | Designed by TemplateMo</p>
+  </div>
+</footer>
+<script src="js/jquery.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/custom-detail.js"></script>
+</body>
+</html>

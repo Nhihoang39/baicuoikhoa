@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+body
+	{
+		background-color: #fff;
+		color: #666;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 16px;
+		margin: 0;
+		font-weight:320;
+		letter-spacing:1px
+		}
+a
+	{
+		color: black;
+		text-decoration:none;
+		font-weight:300
+		
+	}
+a:hover { color:#69BB7E}
+/*--he thong luoi ----*/
+*{ box-sizing: border-box; outline: none}
+.container{ width: 80%; margin: auto;}
+.row{
+	display: flex;
+	flex-wrap: wrap
+}
+.w-50 { width: 50%;  padding: 15px}
+.w-33 { width: 33.33%;padding: 15px}
+.w-25 { width: 25%; padding:15px}
+.img-100{ width: 100%; height: auto}
+.img-circle{border-radius: 50%; border: 1px solid #ddd}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/
+}
+/*--- style bộ màu chính cho web-------*/
+.text-primary { color:#31984C }
+.bg-primary{ background: #59ab6e }
+.btn-primary{ 
+	background:#31984C ; color: #fff; 
+	transition: all 0.5s;padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px
+}
+.btn-primary:hover{background:#0D4209}
+/*---- style bộ màu tối và sáng --------------*/
+.bg-dark { background: #1E1E1E}
+.text-dark{ color: #1E1E1E}
+.bg-light { background: #F7F8FC}
+.bg-grey{background: #DFE5F3}
+.text-grey{color:#888888}
+.text-light{ color: #eee}
+.bg-black { background: #000}
+.bg-white { background: #fff}
+
+.text-star{color:#F1B214}
+.text-review{color:#c1c1c1}
+
+.hvr-fill-out{	position: relative}
+
+.hvr-fill-out:before{
+	position: absolute;
+	content: "";
+	width: 100%; height: 0;
+	left: 0; background: yellow;
+	bottom: 0px;
+	z-index: -1;
+	transition: all 0.5s
+}
+.hvr-fill-out:hover:before
+{
+	height: 100%; color: #333
+}
+/*--- style khoảng cách khi cần-*/
+.mt-50{ margin-top: 50px}
+.mb-30{ margin-bottom: 30px}
+.pt-50{ padding-top: 50px}
+.pt-120{padding-top:120px}
+.pt-30{ padding-top: 30px}
+.pb-50{ padding-bottom: 50px}
+.py-50{ padding-bottom: 50px; padding-top: 50px}
+.py-20{ padding-bottom: 20px; padding-top: 20px}
+.p-50{padding: 50px}
+.p-0{padding:0}
+.p-5{padding:5px}
+.pl-10{padding:0 10px }
+.pl-20{padding:10px 10px}
+.pl-30{padding:0 10%}
+.mx-auto{margin-left: auto; margin-right: auto}
+/*--------- style bố cục linh hoạt ------------------*/
+.d-flex{ display: flex}
+.align-item-center{ align-items: center}
+.justify-center{ justify-content: center}
+.justify-between { justify-content: space-between}
+.justify-right{ justify-content: right}
+
+/*--- canh text ---*/
+.text-center{ text-align: center}
+.text-right{ text-align: right}
+.text-left{ text-align: left}
+
+.row-reverse{ flex-direction: row-reverse}
+
+/*--- style cho navbar ---*/
+
+.navbar{background: #fff; z-index: 999; padding:20px 0}
+.navbar .container{
+	
+	display: flex;
+	align-items: center;/*---cac items canh giua theo chieu doc ---*/
+	justify-content: space-between /*--- chia khoarng cach be ngang deu nhau ---*/
+
+}
+.navbar .logo img{height: 50px; width: auto}
+.navbar #menu ul{display:flex; margin: 0; list-style: none; padding: 0}
+.navbar #menu ul li{position:relative}
+.navbar #menu ul li a{display: block; padding:10px 20px; font-size: 1.2rem}
+.navbar #menu ul li a:hover{background: #69BB7E; color:#eee}
+.navbar #menu ul li a.active{border-bottom:2px solid #5C8455;color: #333}
+
+.navbar .dropdown{
+	position: absolute;
+	background: #1E1E1E; width: 200px;
+	left: 0; top:200%;
+	opacity: 0; visibility: hidden;
+	transition: all .5s;
+z-index: 9999}
+
+.navbar .dropdown a{display:block; color: #eee}
+
+.navbar #menu ul li:hover>.dropdown{
+	top:100%; opacity: 1; visibility: visible
+}
+
+.card{
+	
+	border: 1px solid #ddd;
+	border-radius:8px; overflow: hidden; transition: all .5s;
+	padding:8px 24px 
+}
+
+.card:hover{box-shadow: 0 0 20px #c1c1c1}
+
+/*card3 cho chi tiết sản phẩm trang Detailproduct và Product*/
+
+.card3{padding: 0 0; margin:5px; box-shadow: 0 0 5px #c1c1c1; border: 1px solid #ddd;
+	; transition: all .5s; position:relative;font-weight:400; line-height: 0.8; padding-bottom:10px}
+
+.card3:hover{
+	filter: brightness(80%) ;
+	
+	
+}
+
+
+
+
+
+/*card2 cho trang Abbout*/
+.card2{
+	padding:50px 20px;
+	box-shadow: 0 0 20px #c1c1c1;
+
+	
+}
+
+.card2 i{color:#59ab6e;}
+
+
+.card2:hover{background:#59ab6e; color:#F5F4F4; text-color:#F5F4F4}
+.card2:hover >i{color:#F5F4F4}
+
+.border-bottom{border-bottom: 1px solid #565555; padding-bottom: 20px}
+
+footer i{margin:0 10px}
+footer a{color:#eee; display:block; margin:15px; }
+footer p.icon{display:flex}
+footer .circle-icon{border: 1px solid #ddd; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background:#000; margin:5px}
+
+
+footer .circle-icon:hover{
+	background: #ddd; color: #000;
+	
+}
+
+
+
+.form-inline{display: flex; justify-content: flex-end; }
+.input-form{width:50%; background:#000; color:#eee; border:0.4px solid #929292; padding-left: 10px}
+.form-control{width: 100%; padding:10px; border:0.4px solid #929292; border-radius: 5px; margin-top: 5px}
+
+
+
+.logos{filter: grayscale(100%);
+    opacity: 0.5; padding:0px 15%;}
+.logos:hover{opacity: 1; filter: grayscale(0%)}
+
+.list-inline{padding-left:0;list-style:none}.list-inline-item{display:inline-block}.list-inline-item:not(:last-child){margin-right:.5rem}
+.btn-product{ 
+	background:#31984C ; color: #fff; 
+	transition: all 0.5s;padding: 10px 15px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 0 5px;
+	border: none;
+	text-align:center;
+	align-item:center;
+}
+.btn-product:hover{background:#0D4209}
+.iconcard{display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; position:absolute; right: 10%; top:30%; opacity:0;visibility: hidden; transition:all .5s }
+.card3:hover>.iconcard{opacity: 1; visibility: visible}
+
+.iconcard a{width:40px; height:40px; margin:5px; border-radius:5px;align-item:center; text-align:center; line-height :40px; background: #21AE47; color:white}
+
+
+
